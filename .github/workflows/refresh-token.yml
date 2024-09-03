@@ -1,0 +1,16 @@
+name: Refresh Token
+
+on:
+    schedule:
+        - cron: "0 0 */30 * *"
+    workflow_dispatch:
+
+jobs:
+    refresh-token:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+            - name: Run refresh-token script
+              run: ACCESS_TOKEN=${{ secrets.ACCESS_TOKEN }} scripts/refresh-token.sh
