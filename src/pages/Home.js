@@ -8,7 +8,6 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <h1>Guidara Glass Designs</h1>
             <Button text="Commission Form" onClick={() => window.open(config.commissionUrl, '_blank')} />
             <h2>Recent Work</h2>
             <InstagramPosts />
