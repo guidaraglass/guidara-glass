@@ -13,4 +13,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
             - name: Run refresh-token script
-              run: ACCESS_TOKEN=${{ secrets.ACCESS_TOKEN }} scripts/refresh-token.sh
+              run: ./scripts/refresh-token.sh
+              env:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
