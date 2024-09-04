@@ -21,8 +21,8 @@ const InstagramPosts = () => {
 
     return (
         <div>
-            {posts.map((post) => (
-                <InstagramPost key={post.id} post={post} />
+            {posts.map((post, index) => (
+                <InstagramPost key={post.id} post={post} index={index} />
             ))}
         </div>
     );

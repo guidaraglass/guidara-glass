@@ -8,7 +8,9 @@ import { config } from '../config';
 const Header = () => {
     return (
         <header className="App-header">
-            <img src={logo} alt="Guidara Glass Designs logo" className="logo" />
+            <h1>
+                <img src={logo} alt="Guidara Glass Designs, Stained Glass Artworks" className="logo" aria-hidden />
+            </h1>
             <div className="contact-links">
                 <a href="mailto:kim.does.glass@gmail.com" className="App-link" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faEnvelope} />
